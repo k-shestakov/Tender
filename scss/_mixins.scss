@@ -1,0 +1,6 @@
+@mixin fz_clr($fz, $cl, $pp,$bg) {
+    font-size: $fz;
+    color: $cl;
+    padding: $pp;
+    background-color: $bg;
+}

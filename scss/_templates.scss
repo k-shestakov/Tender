@@ -1,0 +1,17 @@
+%button_main {
+    width: 271px;
+    height: 54px;
+    background: #A57452;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: (29 / 24) * 100%;
+    letter-spacing: 0.13em;
+    color: #FFF4D9;
+    @media (max-width: 767px) {
+        font-size: 20px;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+    }
+}
