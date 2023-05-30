@@ -121,6 +121,7 @@
     }
 
     &__address {
+        font-style: normal;
     }
 
     &__location {
@@ -269,6 +270,35 @@
             line-height: (24 / 20) * 100%;
             letter-spacing: 0.05em;
             color: #D8BF7E;
+        }
+    }
+
+    ._error {
+       position: relative;
+    }
+    ._error::after {
+        content: 'error*';
+        position: absolute;
+        display: block;
+        bottom: -35px;
+        left: 15px;
+        width: 100px;
+        height: 30px;
+        color: #F25252;
+        font-size: 24px;
+    }
+    @media (max-width:450px) {
+        ._error {
+            position: relative;
+         }
+         ._error::after {
+             content: '';
+             position: absolute;
+            
+         }
+         &__form._error {
+            box-shadow: red 0px 0px 3px 0px;
+            
         }
     }
 

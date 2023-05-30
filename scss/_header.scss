@@ -219,8 +219,6 @@ a {
 //         height: 19px;
 //         border-radius: 50%;
 //     }
-//     &__link {
-//     }
 
 //     &__icon {
 //         flex: 0 1 50px;
@@ -267,6 +265,7 @@ a {
 }
 
 .header__menu {
+   
 }
 .menu {
 }
@@ -277,7 +276,49 @@ a {
 }
 .menu__list {
     display: flex;
-    gap: 55px;
+    // gap: 55px;
+    &:first-child::before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        left: -10px;
+        width: 65px;
+        height: 2px;
+        background-color: $color_hd;
+    }
+    &:last-child::after {
+        content: '';
+        position: relative;
+        right: -10px;
+        display: inline-block;
+        width: 65px;
+        height: 2px;
+        background-color: $color_hd;
+    }
+    @media (max-width: 995px) {
+        &:first-child::before {
+            content: '';
+            display: inline-block;
+            position: relative;
+            left: -5px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $color_hd;
+        }
+        &:last-child::after {
+            content: '';
+            position: relative;
+            right: -5px;
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $color_hd;
+        }
+    }
+   
+   
 }
 .menu__list > li {
 	position: relative;
@@ -291,10 +332,30 @@ a {
     line-height: 29px;
     letter-spacing: 0.4em;
     color: #8B4513;
+    transition: all 0.1s ease 0s;
+    padding: 30px 25px 23px;
+        // &:hover {
+        //     background-color: #925f3b;
+        //     color: $bg_hd;
+        //     transition: all 0.3s ease 0s;
+        // }
+    @media (max-width: 995px) {
+        & {
+            padding: 30px 15px 23px;
+        }
+    }
+    @media (min-width: 767px) {
+        & {
+            
+        }
+        &:hover {
+            background-color: #925f3b;
+            color: $bg_hd;
+            transition: all 0.3s ease 0s;
+        }
+    }
 }
-.menu__link:hover {
-	text-decoration: underline;
-}
+
 
 @media (min-width: 767px) {
 	.menu__list {
@@ -387,6 +448,7 @@ a {
         display: flex;
         justify-content: center;
         text-align: center;
+       
 	}
 	.menu__body._active {
 		left: 0;
@@ -418,3 +480,5 @@ a {
 	}
     
 }
+
+

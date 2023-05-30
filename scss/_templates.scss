@@ -1,4 +1,7 @@
 %button_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 271px;
     height: 54px;
     background: #A57452;
@@ -8,10 +11,15 @@
     line-height: (29 / 24) * 100%;
     letter-spacing: 0.13em;
     color: #FFF4D9;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background-color: #b18464;
+    }
     @media (max-width: 767px) {
         font-size: 20px;
     }
     @media (max-width: 500px) {
         width: 100%;
     }
+
 }
