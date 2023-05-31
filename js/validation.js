@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
     const formCustomer = document.getElementById('formCustomer');
     console.log(formCustomer);
-    formCustomer.addEventListener('submit', formSend);
+    // formCustomer.addEventListener('submit', formSend);
 
     const close = document.querySelector('.close');
     close.addEventListener('click', closePop); // or document
