@@ -1,0 +1,111 @@
+@import 'import';
+
+.check-order {
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    margin-bottom: 10px;
+    // display: block;
+}
+.check-order._error::after {
+    content: '*';
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    color: #F25252;
+}
+
+
+.order {
+    margin-top: 80px;
+    &_inner {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__row {
+    }
+
+    &__title {
+    }
+
+    &__form {
+        max-width: 792px;
+        margin: 0 auto;
+    }
+}
+.order-form-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.17em;
+    text-align: center;
+    margin: 57px 0px 44px;
+}
+.order-name {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -24px;
+}
+.check-order {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.17em;
+    display: inline-block;
+}
+.order-input {
+    background: #F7EAC8;
+    border-radius: 5px;
+    height: 65px;
+    width: 100%;
+    padding: 5px 15px;
+    font-size: 22px;
+    letter-spacing: 0.17em;
+    color: #A57452;
+}
+.order-input__textarea {
+    height: 200px;
+    resize: none;
+}
+.order-name__wrapper {
+    flex: 0 1 50%;
+    padding: 0px 24px;
+}
+
+.order-address {
+}
+.order-town {
+}
+.order-postcode {
+}
+.order-phone {
+}
+.order-email {
+}
+.order-button__wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.order-send {
+    width: 384px;
+    height: 59px;
+    background: #A57452;
+    border-radius: 5px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    color: #FFF4D9;
+    transition: all 0.3s ease 0s;
+    &:hover {
+        background-color: #c09170;
+    }
+}
+.footer {
+    margin-top: 180px;
+}

@@ -3,9 +3,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
     const body = document.body;
-    const formCustomer = document.getElementById('formCustomer');
-    console.log(formCustomer);
-    formCustomer.addEventListener('submit', formSend);
+    const orderCustomer = document.getElementById('orderCustomer');
+    console.log(orderCustomer);
+    orderCustomer.addEventListener('submit', formSend);
 
     const close = document.querySelector('.close');
     close.addEventListener('click', closePop); // or document
@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
     async function formSend(e) {
         e.preventDefault();
 
-        let error = formValidate(formCustomer);
+        let error = formValidate(orderCustomer);
 
-        let formData = new FormData(formCustomer);
+        let formData = new FormData(orderCustomer);
 
         if (!error) {
 

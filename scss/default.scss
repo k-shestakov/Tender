@@ -38,6 +38,21 @@ body {
     padding-top: 85px;
 }
 
+.main-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.main-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+}
 
 // ================== pop-up thanks ==========================================================================================
 .thanks {
@@ -110,5 +125,22 @@ body {
             background-color: rgba(255, 255, 255, 0);
             color: #8B4513;
         }
+    }
+}
+
+// ============ dots ====================================
+.shop {
+    &__points {
+        margin-top: 23px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__point {
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 50%;
     }
 }

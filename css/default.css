@@ -843,6 +843,23 @@ body {
   padding-top: 85px;
 }
 
+.main-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.main-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+
 .thanks {
   position: fixed;
   width: 100%;
@@ -912,4 +929,21 @@ body {
     background-color: rgba(255, 255, 255, 0);
     color: #8B4513;
   }
+}
+
+.shop__points {
+  margin-top: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+.shop__point {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
 }
